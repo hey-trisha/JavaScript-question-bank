@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    
+    //Q Print numbers from 1 to 100 using a loop.
+
+    for(var i=1;i<=100;i++){
+      document.write(i+"<br>")
+    }
+
+    //Q Print even numbers between 1 to 50
+
+    document.write("Even number in between 1 to 50 : ","<br>")
+    for(var num=1;num<=50;num++){
+      if(num%2==0){
+        document.write(num,"<br>")
+      }
+    }
+
+    //Q Calculate the sum of the first N natural no.
+
+    var n=parseInt(prompt("enter your value :"))
+    var sum=0;
+    document.write("n = "+n,"<br>")
+
+    for (i=1;i<=n;i++){
+      sum+=i
+    }
+    document.write("Sum of "+n+" Natural no = "+sum)
+
+    //Q Find the factorial of a number using a loop.
+    
+    var n=parseInt(prompt("enter no : "))
+    document.write("n = "+n+"<br>")
+    var fact=1;
+    for(i=1;i<=n;i++){
+      fact*=i
+    }
+    document.write("Factorial = ",fact)
+
+    //Q Print the multiplication table of any number.
+
+
+    for(i=1;i<=10;i++){
+      document.write(" 7 "+" * "+i+" = "+7*i+"<br>")
+    }
+
+    //Q Count how many digits a number has using a loop.
+
+    var num=prompt("Enter value : ");
+    var count=0;
+    document.write("Num = ",num,"<br>")
+
+    for (var i=0; i<num.length; i++){
+      count++;
+    }
+    document.write("Digits : ",count);
+
+  </script>
+</body>
+
+</html>

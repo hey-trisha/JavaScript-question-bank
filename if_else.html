@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conditional</title>
+</head>
+
+<body>
+  <script>
+
+    //Q Check if a number is positive, negative or zero.
+
+    var a = parseInt(prompt("Enter value : "))
+    document.write(a + " ")
+
+    if (a > 0) {
+      document.write("Positive integer")
+    }
+    else if (a < 0) {
+      document.write("Nagative integer")
+    }
+    else if (a == 0) {
+      document.write("Zero")
+    }
+
+    //Q Find the larget of two numbers
+
+    var a = parseInt(prompt("enter 1st value : "))
+    var b = parseInt(prompt("enter 2nd value : "))
+    document.write("a = " + a + "<br>")
+    document.write("b = " + b + "<br>")
+
+    if (a > b) {
+      document.write(a + " is larger than " + b)
+    }
+    else if (b > a) {
+      document.write(b + " is larger than " + a)
+    }
+    else {
+      document.write("Both are equal")
+    }
+
+    //Q Find the largest of three numbers
+
+    var a = parseInt(prompt("enter 1st value : "))
+    var b = parseInt(prompt("enter 2nd value : "))
+    var c = parseInt(prompt("enter 3rd value : "))
+
+    document.write("a= " + a + "<br>")
+    document.write("b= " + b + "<br>")
+    document.write("c= " + c + "<br>")
+
+    if (a > b && a > c) {
+      document.write("a is largest no")
+    }
+    else if (b > a && b > c) {
+      document.write("b is largest no")
+    }
+    else if (c > a && c > b) {
+      document.write("c is largest no")
+    }
+
+    //Q Check if a number is even or odd
+
+    var x = parseInt(prompt("enter your value : "))
+    document.write("x = " + x + "<br>")
+
+    if (x % 2 == 0) {
+      document.write("Even no")
+    }
+    else {
+      document.write("Odd no")
+    }
+
+    //Check if a person is eligible to vote
+
+    var age = parseInt(prompt("Enter your age : "))
+    document.write("Age = " + age + "<br>")
+
+    if (age >= 18) {
+      document.write("you are eligible to vote")
+    }
+    else {
+      document.write("you are not eligible to vote")
+    }
+
+    //Q Validate a username and password
+
+    var user_name = prompt("Enter username : ");
+    var pass_word = prompt("Enter password : ");   
+
+    let username = "admin";
+    let password = "1234";
+
+    if (user_name === username && pass_word === password) {
+      document.write("Login Success");
+    }
+    else if (user_name !== username && pass_word === password) {
+      document.write("Incorrect username");
+    }
+    else if (user_name === username && pass_word !== password) {
+      document.write("Incorrect password");
+    }
+    else {
+      document.write("Invalid Credentials");
+    }
+
+
+    //Q Check if a number lies between 10 and 20
+
+    var num = parseInt(prompt("Enter your No : "))
+    document.write("num = "+num+"<br>")
+
+    if (num >= 10 && num <= 20) {
+      document.write("Within range")
+    }
+    else {
+      document.write("Out of range")
+    }
+
+    //Q Simple calculator
+
+    let a = 10;
+    let b = 5;
+    let operator = "+";
+
+    let result;
+
+    if (operator == "+") {
+      result = a + b;
+    }
+    else if (operator == "-") {
+      result = a - b;
+    }
+    else if (operator == "*") {
+      result = a * b;
+    }
+    else if (operator == "/") {
+      result = a / b;
+    }
+    else {
+      result = "Invalid operator";
+    }
+
+    document.write("Result: " + result);
+
+    //Q Grade calculation
+
+    var math = 85;
+    var science = 82;
+    var sst = 80;
+    var eng = 86;
+
+    var total_score = math + science + sst + eng;
+    document.write("Total Score = ", total_score, "<br>")
+    var per = (total_score / 400) * 100;
+    document.write("Percentage = " + per + "%" + "<br>")
+
+    if (per >= 90) {
+      document.write("Grade = A")
+    }
+    else if (per >= 80) {
+      document.write("Grade = B")
+    }
+    else if (per >= 70) {
+      document.write("Grade = C")
+    }
+    else if (per >= 60) {
+      document.write("Grade = D")
+    }
+    else {
+      document.write("Fail")
+    }
+
+
+    //Q Check if a number is divisible by 3 or 5 or both
+
+    var num = parseInt(prompt("Enter no : "))
+    document.write("num = " + num + "<br>")
+
+    if (num % 3 == 0 && num % 5 == 0) {
+      document.write("Divisible by both")
+    }
+    else if (num % 3 == 0) {
+      document.write("Divisible by 3")
+    }
+    else if (num % 5 == 0) {
+      document.write("Divisible by 5")
+    }
+    else {
+      document.write("Not divisible")
+    }
+
+
+    
+
+  </script>
+</body>
+
+</html>
